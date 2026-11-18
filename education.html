@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Education | My Personal Resume</title>
+
+    <style>
+
+        /* GENERAL SETTINGS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F7EDEB;
+            color: #514047;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #702D40;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 27px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #F0DADD;
+            font-size: 12px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #8E5260;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #F5D8DC;
+            text-decoration: underline;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        .page-title h2 {
+            color: #702D40;
+            font-size: 34px;
+        }
+
+        .page-title p {
+            color: #8E5260;
+        }
+
+        /* INTRODUCTION */
+        .intro {
+            max-width: 850px;
+            margin: 0 auto 30px;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        /* EDUCATION SECTION */
+        .education-section {
+            background-color: white;
+            max-width: 1000px;
+            width: 90%;
+            margin: 25px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #E3CCCF;
+        }
+
+        .education-section h2 {
+            color: #702D40;
+            border-bottom: 2px solid #D8B9BD;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* EDUCATION CARDS */
+        .education-card {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            margin: 25px 0;
+            padding: 20px;
+            background-color: #F7EDEB;
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+
+        .education-card img {
+            width: 220px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 4px solid white;
+        }
+
+        .education-details {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .education-details h3 {
+            color: #702D40;
+            margin-bottom: 8px;
+        }
+
+        .year {
+            color: #A56B78;
+            font-weight: bold;
+        }
+
+        /* EDUCATION TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #D8B9BD;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #702D40;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F7EDEB;
+        }
+
+        /* LISTS */
+        ul {
+            padding-left: 25px;
+            list-style-type: square;
+        }
+
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .custom-list {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        .custom-list li::before {
+            content: "✦ ";
+            color: #A56B78;
+            font-weight: bold;
+        }
+
+        /* QUICK NAVIGATION */
+        .quick-links {
+            text-align: center;
+        }
+
+        .quick-links a {
+            display: inline-block;
+            background-color: #702D40;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 8px;
+            border-radius: 5px;
+        }
+
+        .quick-links a:hover {
+            background-color: #A56B78;
+        }
+
+        /* EXTERNAL LINK */
+        .external-link {
+            color: #8E5260;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #702D40;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 600px) {
+
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .page-title h2 {
+                font-size: 27px;
+            }
+
+            .education-card {
+                justify-content: center;
+                text-align: center;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div>
+            <h1>MY RESUME</h1>
+            <p>PERSONAL WEBSITE & PORTFOLIO</p>
+        </div>
+
+        <p>My Academic Journey</p>
+
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <div class="page-title">
+
+        <h2>My Education</h2>
+
+        <p>Learning Today, Leading Tomorrow</p>
+
+    </div>
+
+    <!-- INTRODUCTION -->
+    <div class="intro">
+
+        <p>
+            Education plays an important role in shaping
+            my knowledge, skills and personal development.
+            This page highlights my academic journey and
+            educational background.
+        </p>
+
+    </div>
+
+    <!-- EDUCATION BACKGROUND -->
+    <section class="education-section" id="background">
+
+        <h2>Educational Background</h2>
+
+        <!-- SECONDARY SCHOOL -->
+        <div class="education-card">
+
+            <img src="[NAMA_GAMBAR_SEKOLAH.jpg]"
+                 alt="My Secondary School">
+
+            <div class="education-details">
+
+                <h3>Secondary Education</h3>
+
+                <p class="year">[Year - Year]</p>
+
+                <p>
+                    <b>Institution:</b>
+                    [Name of Secondary School]
+                </p>
+
+                <p>
+                    <b>Qualification:</b>
+                    Sijil Pelajaran Malaysia (SPM)
+                </p>
+
+                <p>
+                    <b>Achievements:</b>
+                    [Insert Your Achievements]
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- DIPLOMA -->
+        <div class="education-card">
+
+            <img src="[NAMA_GAMBAR_UITM.jpg]"
+                 alt="My University">
+
+            <div class="education-details">
+
+                <h3>Diploma Education</h3>
+
+                <p class="year">[Year - Present]</p>
+
+                <p>
+                    <b>Institution:</b>
+                    Universiti Teknologi MARA (UiTM)
+                </p>
+
+                <p>
+                    <b>Programme:</b>
+                    [Your Diploma Programme]
+                </p>
+
+                <p>
+                    <b>Faculty:</b>
+                    [Your Faculty]
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ACADEMIC SUMMARY TABLE -->
+    <section class="education-section" id="summary">
+
+        <h2>Academic Summary</h2>
+
+        <table>
+
+            <tr>
+                <th>Level</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Qualification</th>
+            </tr>
+
+            <tr>
+                <td>Secondary School</td>
+                <td>[School Name]</td>
+                <td>[Year]</td>
+                <td>SPM</td>
+            </tr>
+
+            <tr>
+                <td>Diploma</td>
+                <td>UiTM</td>
+                <td>[Year - Present]</td>
+                <td>Diploma</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- ACADEMIC INTERESTS -->
+    <section class="education-section" id="interests">
+
+        <h2>Academic Interests</h2>
+
+        <p>
+            Throughout my studies, I have developed
+            an interest in the following areas:
+        </p>
+
+        <ul>
+            <li>Information Management</li>
+            <li>Information Organization</li>
+            <li>Digital Technology</li>
+            <li>Records and Information Management</li>
+            <li>Web Content Management</li>
+        </ul>
+
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="education-section" id="achievements">
+
+        <h2>Achievements & Activities</h2>
+
+        <p>
+            Some of my academic achievements and
+            educational activities include:
+        </p>
+
+        <ol>
+            <li>[Academic Achievement 1]</li>
+            <li>[Academic Achievement 2]</li>
+            <li>[Participation in Academic Activities]</li>
+            <li>[Certificates or Awards]</li>
+        </ol>
+
+    </section>
+
+    <!-- SKILLS DEVELOPED -->
+    <section class="education-section">
+
+        <h2>Knowledge & Skills Developed</h2>
+
+        <ul class="custom-list">
+
+            <li>Critical Thinking</li>
+
+            <li>Communication and Presentation</li>
+
+            <li>Teamwork and Collaboration</li>
+
+            <li>Research and Information Skills</li>
+
+            <li>Digital and Technical Skills</li>
+
+        </ul>
+
+    </section>
+
+    <!-- EXTERNAL LINK -->
+    <section class="education-section">
+
+        <h2>Explore My Institution</h2>
+
+        <p>
+            Learn more about my university through
+            its official website:
+        </p>
+
+        <p>
+            <a class="external-link"
+               href="https://www.uitm.edu.my/"
+               target="_blank">
+               Universiti Teknologi MARA Official Website
+            </a>
+        </p>
+
+    </section>
+
+    <!-- QUICK NAVIGATION -->
+    <section class="education-section quick-links">
+
+        <h2>Explore More</h2>
+
+        <a href="biodata.html">My Biodata</a>
+
+        <a href="experience.html">My Experience</a>
+
+        <a href="index.html">Back to Home</a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>Created by: [Your Full Name]</p>
+
+        <p>
+            Statement of Ownership:
+            This website is created and maintained
+            by the author for academic purposes (IMD318).
+        </p>
+
+        <p>
+            Date Created: 12 November 2026 |
+            Last Updated: 12 November 2026
+        </p>
+
+        <p>
+            &copy; 2026 My Personal Resume.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biodata | My Personal Resume</title>
+
+    <style>
+
+        /* GENERAL SETTINGS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F7EDEB;
+            color: #514047;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #702D40;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 27px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #F0DADD;
+            font-size: 12px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #8E5260;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #F5D8DC;
+            text-decoration: underline;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        .page-title h2 {
+            color: #702D40;
+            font-size: 32px;
+        }
+
+        .page-title p {
+            color: #8E5260;
+        }
+
+        /* PROFILE SECTION */
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+            padding: 30px 10% 50px;
+            flex-wrap: wrap;
+        }
+
+        .profile img {
+            width: 220px;
+            height: 260px;
+            object-fit: cover;
+            border: 6px solid white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #D8B9BD;
+        }
+
+        .profile-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .profile-text h2 {
+            color: #702D40;
+            margin-bottom: 10px;
+        }
+
+        .profile-text p {
+            margin-bottom: 15px;
+        }
+
+        /* CONTENT SECTIONS */
+        .content-section {
+            background-color: white;
+            margin: 25px auto;
+            padding: 30px;
+            max-width: 1000px;
+            width: 90%;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #E3CCCF;
+        }
+
+        .content-section h2 {
+            color: #702D40;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #D8B9BD;
+            padding-bottom: 8px;
+        }
+
+        /* PERSONAL INFORMATION TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #EBD9D9;
+        }
+
+        th {
+            width: 35%;
+            color: #702D40;
+            background-color: #F7EDEB;
+        }
+
+        /* SKILLS AND INTERESTS */
+        ul {
+            padding-left: 25px;
+            list-style-type: square;
+        }
+
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* CUSTOM LIST MARKER */
+        .custom-list {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        .custom-list li::before {
+            content: "✦ ";
+            color: #A56B78;
+            font-weight: bold;
+        }
+
+        /* IMAGE MAP */
+        .image-map {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        /* PRE TEXT */
+        pre {
+            background-color: #F7EDEB;
+            padding: 15px;
+            border-left: 4px solid #8E5260;
+            white-space: pre-wrap;
+            border-radius: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #702D40;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 600px) {
+
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .profile {
+                text-align: center;
+            }
+
+            .page-title h2 {
+                font-size: 26px;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 13px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div>
+            <h1>MY RESUME</h1>
+            <p>PERSONAL WEBSITE & PORTFOLIO</p>
+        </div>
+
+        <p>Getting to Know Me</p>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <div class="page-title">
+        <h2>My Biodata</h2>
+        <p>A Little Introduction About Myself</p>
+    </div>
+
+    <!-- PROFILE SECTION -->
+    <section class="profile">
+
+        <img src="[NAMA_FAIL_GAMBAR.jpg]"
+             alt="My Profile Picture">
+
+        <div class="profile-text">
+
+            <h2>Hello, I'm [Your Name]!</h2>
+
+            <p>
+                I am a [Your Background] with an interest
+                in learning new things and developing my
+                personal and professional skills.
+            </p>
+
+            <p>
+                I believe that continuous learning and
+                positive experiences help me grow into
+                a better individual.
+            </p>
+
+            <p>
+                <b>Personal Motto:</b>
+                <i>"[Insert Your Personal Motto]"</i>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PERSONAL INFORMATION -->
+    <section class="content-section" id="personal">
+
+        <h2>Personal Information</h2>
+
+        <table>
+
+            <tr>
+                <th>Full Name</th>
+                <td>[Your Full Name]</td>
+            </tr>
+
+            <tr>
+                <th>Date of Birth</th>
+                <td>[Your Date of Birth]</td>
+            </tr>
+
+            <tr>
+                <th>Place of Birth</th>
+                <td>[Your Place of Birth]</td>
+            </tr>
+
+            <tr>
+                <th>Nationality</th>
+                <td>[Your Nationality]</td>
+            </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td>[Your Gender]</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td>[Your Email Address]</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="content-section" id="skills">
+
+        <h2>My Skills</h2>
+
+        <p>Some of the skills that I have developed include:</p>
+
+        <ul>
+            <li>Communication Skills</li>
+            <li>Teamwork and Collaboration</li>
+            <li>Time Management</li>
+            <li>Microsoft Office Skills</li>
+            <li>Problem-Solving Skills</li>
+        </ul>
+
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="content-section" id="languages">
+
+        <h2>Languages</h2>
+
+        <ol>
+            <li>Bahasa Melayu - [Proficiency Level]</li>
+            <li>English - [Proficiency Level]</li>
+            <li>[Other Language] - [Proficiency Level]</li>
+        </ol>
+
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="content-section" id="interests">
+
+        <h2>My Interests & Hobbies</h2>
+
+        <p>Here are some activities that I enjoy:</p>
+
+        <ul class="custom-list">
+            <li>Reading and exploring new knowledge</li>
+            <li>Listening to music</li>
+            <li>Travelling and discovering new places</li>
+            <li>Photography</li>
+            <li>Spending time with family and friends</li>
+        </ul>
+
+    </section>
+
+    <!-- IMAGE MAP -->
+    <section class="content-section">
+
+        <h2>Explore My Personal Profile</h2>
+
+        <p>
+            Click on the different sections of the image
+            to explore more about my profile.
+        </p>
+
+        <img src="[NAMA_FAIL_KOLAJ.jpg]"
+             alt="My Personal Profile Image Map"
+             usemap="#profilemap"
+             class="image-map"
+             width="600"
+             height="300">
+
+        <map name="profilemap">
+
+            <area shape="rect"
+                  coords="0,0,200,300"
+                  href="#skills"
+                  alt="My Skills">
+
+            <area shape="rect"
+                  coords="200,0,400,300"
+                  href="#languages"
+                  alt="My Languages">
+
+            <area shape="rect"
+                  coords="400,0,600,300"
+                  href="#interests"
+                  alt="My Interests">
+
+        </map>
+
+    </section>
+
+    <!-- TEXT FORMATTING -->
+    <section class="content-section">
+
+        <h2>Additional Information</h2>
+
+        <p>
+            I am always willing to improve myself and
+            learn new skills. I believe that
+            <b>determination</b>, <i>confidence</i> and
+            <u>continuous improvement</u> are important
+            for personal development.
+        </p>
+
+        <p>
+            <b>Abbreviation:</b>
+            <abbr title="Universiti Teknologi MARA">UiTM</abbr>
+        </p>
+
+        <p>
+            <b>Example of Superscript:</b> 1<sup>st</sup>
+        </p>
+
+        <p>
+            <b>Example of Subscript:</b> H<sub>2</sub>O
+        </p>
+
+        <p><b>Personal Introduction:</b></p>
+
+        <pre>
+Name       : [Your Name]
+Interest   : [Your Interest]
+Personality: [Your Personality]
+        </pre>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>Created by: [Your Full Name]</p>
+
+        <p>
+            Statement of Ownership:
+            This website is created and maintained by
+            the author for academic purposes (IMD318).
+        </p>
+
+        <p>
+            Date Created: 11 November 2026 |
+            Last Updated: 11 November 2026
+        </p>
+
+        <p>
+            &copy; 2026 My Personal Resume.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

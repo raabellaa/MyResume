@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | My Personal Resume</title>
+
+    <style>
+        /* GENERAL SETTINGS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F7EDEB;
+            color: #514047;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #702D40;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 27px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 12px;
+            color: #F0DADD;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            background-color: #8E5260;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #F5D8DC;
+            text-decoration: underline;
+        }
+
+        /* WELCOME SECTION */
+        .welcome {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 45px;
+            padding: 65px 10%;
+            flex-wrap: wrap;
+        }
+
+        .welcome-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .welcome-text h4 {
+            color: #A56B78;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+
+        .welcome-text h2 {
+            font-size: 38px;
+            color: #702D40;
+            margin-bottom: 12px;
+        }
+
+        .welcome-text p {
+            margin-bottom: 22px;
+            font-size: 16px;
+        }
+
+        .welcome-text a {
+            display: inline-block;
+            background-color: #702D40;
+            color: white;
+            padding: 11px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .welcome-text a:hover {
+            background-color: #A56B78;
+        }
+
+        /* PROFILE IMAGE */
+        .profile-image {
+            width: 250px;
+            height: 290px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 6px solid white;
+            box-shadow: 0 5px 15px #D8B9BD;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            background-color: white;
+            padding: 45px 10%;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #702D40;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* QUICK INFORMATION */
+        .information {
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        .information h2 {
+            color: #702D40;
+            margin-bottom: 25px;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .info-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 210px;
+            box-shadow: 0 3px 10px #E3CCCF;
+        }
+
+        .info-box h3 {
+            color: #8E5260;
+            margin-bottom: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #702D40;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #F5D8DC;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 600px) {
+            header {
+                text-align: center;
+                justify-content: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .welcome-text h2 {
+                font-size: 29px;
+            }
+
+            .profile-image {
+                width: 210px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div>
+            <h1>MY RESUME</h1>
+            <p>PERSONAL WEBSITE & PORTFOLIO</p>
+        </div>
+
+        <p>Welcome to My Personal Website</p>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome">
+
+        <div class="welcome-text">
+            <h4>WELCOME TO MY WEBSITE</h4>
+
+            <h2>Hello, I'm Nurabillah!</h2>
+
+            <p>
+                Welcome to my personal resume website.
+                This website provides an overview of my personal
+                background, educational qualifications, working
+                experiences, skills and interests.
+            </p>
+
+            <a href="biodata.html">Discover More</a>
+        </div>
+
+        <div>
+            <img src="profile.jpg"
+                 alt="My Profile Picture"
+                 class="profile-image">
+        </div>
+
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="about" id="about">
+
+        <h2>About My Website</h2>
+
+        <p>
+            This website is designed to introduce myself and
+            present important information about my academic
+            journey, personal experiences and achievements.
+            Feel free to explore the different sections of
+            my personal resume.
+        </p>
+
+    </section>
+
+    <!-- QUICK INFORMATION -->
+    <section class="information">
+
+        <h2>Explore My Profile</h2>
+
+        <div class="info-container">
+
+            <div class="info-box">
+                <h3>About Me</h3>
+                <p>Get to know my personal background.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Education</h3>
+                <p>Discover my academic qualifications.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Experience</h3>
+                <p>Explore my working experiences.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>My Gallery</h3>
+                <p>View memorable moments and activities.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Created by: Nurabillah Razi
+        </p>
+
+        <p>
+            Statement of Ownership:
+            This website is created and maintained by the author
+            for academic purposes (IMD318).
+        </p>
+
+        <p>
+            Date Created: 11 November 2026 |
+            Last Updated: 11 November 2026
+        </p>
+
+        <p>
+            &copy; 2026 My Personal Resume. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
